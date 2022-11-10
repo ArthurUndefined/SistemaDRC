@@ -4,36 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistemas DRC | Home</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
+    <title>Sistemas DRC | Home</title>
 </head>
 <body>
     <section class="Introduction">
-        <h1>Sistemas DRC</h1>
+        <h1>Sistemas <span>DRC</span></h1>
         <p>Projeto academico, Instituto Federal de Brasilia</p>
-        <input type="button" value="Artigos">
+        <a href="index.html#Articles__Introduction"><input type="button" value="Artigos"></a>
+        
     </section>
     <div class="Transition"></div>
     <section class="Articles">
-        <p class="Articles__Introduction">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        <div class="Articles__Wrapper">
-            <articles class="Articles__Card">
-                <h2>Sistema digestório</h2>
-                <img src="img/home/figado.png" alt="desenho simples de figado.">
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </articles>
-            <articles class="Articles__Card">
-                <h2>Sistema respiratório</h2>
-                <img src="img/home/pulmao.png" alt="desenho simples de pulmão.">
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </articles>
-            <articles class="Articles__Card">
-                <h2>Sistema circulatório</h2>
-                <img src="img/home/coraçao.png" alt="desenho simples de coração.">
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </articles>
-        </div>
+        <p id="Articles__Introduction" class="Articles__Introduction">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <ul class="Articles__Wrapper">
+            <li class="Articles__Card">
+                <a href="html/SistemaDigestório.html">
+                    <h2>Sistema digestório</h2>
+                    <img src="img/home/figado.png" alt="desenho simples de figado.">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </a>
+            </li>
+            <li class="Articles__Card">
+                <a href="html/SistemaRespiratório.html">
+                    <h2>Sistema respiratório</h2>
+                    <img src="img/home/pulmao.png" alt="desenho simples de pulmão.">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </a>
+            </li>
+            <li class="Articles__Card">
+                <a href="html/SistemaCirculatório.html">
+                    <h2>Sistema circulatório</h2>
+                    <img src="img/home/coraçao.png" alt="desenho simples de coração.">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </a>
+            </li>
+        </ul>
     </section>
+    <script src="js/index.js"></script>
 </body>
 </html>
