@@ -5,14 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <!--Reset css-->
     <link rel="stylesheet" href="css/reset.css">
+    <!--css da pagina-->
     <link rel="stylesheet" href="css/index.css">
+    <!--auto contraste-->
+    <link rel="stylesheet" href="./css/auto_contraste.css">
+
+    <!-- Chama o arquivo javascript do auto contraste-->
+    <script src="./js/auto_contraste.js"></script>
+
     <title>Sistemas DRC | Home</title>
 </head>
 <body>
+    
     <section class="Introduction">
         <h1>Sistemas <span>DRC</span></h1>
         <p>Projeto academico, Instituto Federal de Brasilia</p>
+        <a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto contraste [Alt + 3]</a></li>
         <a href="index.html#Articles__Introduction"><input type="button" value="Artigos"></a>
         
     </section>
@@ -20,21 +30,21 @@
     <section class="Articles">
         <p id="Articles__Introduction" class="Articles__Introduction">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         <ul class="Articles__Wrapper">
-            <li class="Articles__Card">
+            <li id="art_sd" class="Articles__Card">
                 <a href="html/SistemaDigestório.html">
                     <h2>Sistema digestório</h2>
                     <img src="img/home/figado.png" alt="desenho simples de figado.">
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 </a>
             </li>
-            <li class="Articles__Card">
+            <li id="art_sr" class="Articles__Card">
                 <a href="html/SistemaRespiratório.html">
                     <h2>Sistema respiratório</h2>
                     <img src="img/home/pulmao.png" alt="desenho simples de pulmão.">
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 </a>
             </li>
-            <li class="Articles__Card">
+            <li id="art_sc" class="Articles__Card">
                 <a href="html/SistemaCirculatório.html">
                     <h2>Sistema circulatório</h2>
                     <img src="img/home/coraçao.png" alt="desenho simples de coração.">
@@ -43,6 +53,24 @@
             </li>
         </ul>
     </section>
+<!--Início do plugin do Vlibras-->
+	<!--criação das divs-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <!--
+    criação da div do plugin-->
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <!--tag script com o link do carregamento do plugin em Java Script-->
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <!--criação da janela para carregamento do plugin-->
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    </body>
+    <!--Fim do plugin do Vlibras-->
     <script src="js/index.js"></script>
 </body>
 </html>

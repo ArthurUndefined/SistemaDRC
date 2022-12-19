@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,100&display=swap');
-@media (min-width:320px) {
+@media (min-width:300px){
     html{
         scroll-behavior: smooth;
     }
@@ -61,6 +61,7 @@
         font-weight: 400;
         font-size: calc(0.5vw + 15px);
         width: 90%;
+        justify-content: center;
     }
     .Articles__Card{
         margin: 40px auto;
@@ -85,7 +86,86 @@
         visibility: hidden;
     }
 }
-@media (min-width:600px) {}
-@media (min-width:801px) {}
-@media (min-width:1025px) {}
-@media (min-width:1281px) {}
+@media (min-width:599px){ /*eu sei mas esse daqui é muito específico*/
+    body{
+        overflow-x: hidden;
+    }
+    .Articles__Introduction{
+        padding-top: 35px;
+    }
+
+}
+@media (min-width:799px) {
+    .Articles__Card {
+        font-size: 15px;
+        width: 240px;
+        height:320px;
+    }
+    .Articles__Card img{
+        width: 150px;
+        height: 175px;
+    }
+
+    h2,p{
+        font-size: calc(0.5vw + 13px);
+    }
+
+    .Articles__Card{
+        margin: 40px auto;
+        width: 170px;
+        height: 310px;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.37);
+    }
+    .Articles__Card a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Articles__Card img{
+        width: 130px;
+        height: 150px;
+        margin: 20px 0;
+    }
+    
+    .Articles__Wrapper{
+        display: flex;
+        justify-content: space-between;
+        width: 90vw;
+        margin: auto;
+        max-width: 1000px;
+        padding-bottom: 20px;
+    }
+}
+@media (min-width:1023px) {
+    .Transition{
+        display: none;
+    }
+
+    .Articles__Introduction{
+        margin: 50px auto 50px;
+    }
+
+}
+@media (min-width:1279px) {
+    section{
+        align-items: center;
+        position: relative;
+        justify-content: center;
+    }
+    h2,p{
+        font-size: 18px;
+    }
+    .Articles__Card{
+        width: 210px;
+        height: 320px;
+        padding: 30px;
+    }
+    .Articles__Card img{
+        width: 180px;
+        height: 200px;
+    }
+
+}
+    
